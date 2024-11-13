@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We would love to hear your thoughts! Please fill out this survey form.</p>
+    
+    <form id="survey-form">
+      <!-- Name Field -->
+      <label id="name-label" for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <!-- Email Field -->
+      <label id="email-label" for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <!-- Number Field -->
+      <label id="number-label" for="number">Age (Optional)</label>
+      <input type="number" id="number" name="age" placeholder="Enter your age" min="10" max="100">
+
+      <!-- Dropdown Field -->
+      <label for="dropdown">Which option best describes you?</label>
+      <select id="dropdown" name="role" required>
+        <option value="">Select an option</option>
+        <option value="student">Student</option>
+        <option value="professional">Professional</option>
+        <option value="other">Other</option>
+      </select>
+
+      <!-- Radio Buttons -->
+      <label>Would you recommend this survey to others?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="recommend" value="yes" required> Yes</label>
+        <label><input type="radio" name="recommend" value="no"> No</label>
+      </div>
+
+      <!-- Checkboxes -->
+      <label>What topics are you interested in? (Select all that apply)</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="interest" value="technology"> Technology</label>
+        <label><input type="checkbox" name="interest" value="design"> Design</label>
+        <label><input type="checkbox" name="interest" value="business"> Business</label>
+      </div>
+
+      <!-- Textarea -->
+      <label for="comments">Any comments or suggestions?</label>
+      <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+
+      <!-- Submit Button -->
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
